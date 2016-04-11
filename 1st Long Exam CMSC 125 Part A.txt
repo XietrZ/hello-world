@@ -1,0 +1,298 @@
+I. Introduction to Operating Systems
+	
+	Computer System Components
+		Hardware
+		
+		Operating Systems
+		
+		Application Programs
+		
+		Users
+		
+	
+	Abstract View of Computer System Components
+			
+	
+	
+	
+	
+	Perspective of Computer Systems
+	
+	
+	
+	Types of  software
+	
+		Application Software
+	
+		System Software
+		
+			OS
+			Utility Software
+			
+			
+	Software Classification
+	
+	
+	
+	
+	
+	What is an Operating SYstem?
+	
+	
+	
+	
+	
+	Operating System Definition
+		Resource allocator
+		Control Program
+		Kernel
+		
+		
+	Shell
+		Types of Shells
+			Textual Interface
+			Graphical User Interface
+			
+	Kernel
+		Main Components
+			File Manager
+			Device drivers
+			memory manager
+			scheduler and dispatcher
+			
+			
+	Goals of an Operating System
+		From the User Perspective
+		
+	
+		Form the System perspective
+		
+		
+	Operating System Tasks
+		
+		Processor Management
+		
+		
+		Memory Management
+			
+	
+		I/O Management
+		
+		
+		Storage Management
+		
+		
+		Application Interface
+		
+		User Interface
+		
+	Operating System Timeline
+		First Generation
+		
+		Second Generation
+		
+		Third Generation
+		
+		Fourth Generation
+		
+		Next Generation?
+		
+		
+	First Generation: direct input
+	
+	Second generation: batch systems
+	
+	
+	
+		Batch Systems - I/O Completion
+			Pooling
+			
+			Interrupts
+		
+		
+		Spooling
+		
+	
+	Third Generation : multiprogramming
+	
+	
+	Timesharing
+
+
+	System calls
+		
+	
+	Operating System Architectures
+		Monolithic Architecture
+		
+		Layered Architecture
+			Virtual Machine
+		
+		Microkernels
+		
+		Networked and Distributed Operating Systems
+			Network OS
+			Distrbuted OS
+	
+		
+-----------------------------------------------------------------------------------------------
+II. Operating Systems Concepts
+
+	Process
+	
+	Virtual Machine
+	
+	Instruction
+	
+		Operation code
+		
+		Series of operands
+		
+	Computer System Operations
+		
+		Bootstrap Program
+		
+		
+		
+		Interrupt
+		
+		Trap
+		
+		Polling
+		
+		
+		Processes consists of three main components
+		
+		
+		
+		
+		Main-Memory Management
+			Memory
+			Main Memory
+			
+			
+		File Management
+			File
+			
+			
+		Protection System
+			Protection
+			
+			
+		Information Protection and Security
+		
+		
+		Device Management
+			
+		Secondary-Storage Management
+		
+		Disks Management
+		
+		Scheduling and Resource Management
+		
+			Deadlocks
+			
+			Input/Output
+			
+			Files
+				File System
+				
+				
+				Directory
+				
+	System Calls
+	
+	
+	System Design Goals
+		User Goals
+		
+		System Goals
+		
+---------------------------------------------------------------------------------------------------------------
+
+III. Process Synchronization
+
+	IPC
+	
+	Three Issues on IPC
+	
+	
+	
+	Race Conditions
+	
+	Critical Region
+	
+	Critical Region Environment
+		Entry Section
+		
+		Critical Section
+		
+		Exit Section
+		
+		Remainder Section
+	
+	
+	How can we avoid Race Conditions?
+	
+		Mutual Exclusion
+		
+		Progress
+		
+		Bounded Wait
+		
+		
+	Synchronization Primitives
+	
+		Sleep
+		
+		WakeUp
+		
+		Yield
+		
+	But how can these be implemented?
+		In User Programs
+		
+		In Kernel
+		
+		
+	But How can Scheduler Routine be programmed correctly?
+	
+		Disabled Interrupts
+		
+		Lock Variables
+		
+		Strict Alternation
+		
+		Peterson's Solution
+		
+		
+		
+	TSL Instructions
+	
+	
+	
+	Semaphore
+		
+		
+		
+		
+		
+		Binary Semaphore
+		Counting Semaphore
+		
+		To overcome busy waiting
+			block
+			
+			wakeup
+			
+	Deadlock
+	
+	Starvation
+	
+	
+	Atomic Transactions
+	
+		Transaction
+		
+		
+	Message Passing
