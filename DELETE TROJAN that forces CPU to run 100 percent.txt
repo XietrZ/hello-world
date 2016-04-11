@@ -1,0 +1,32 @@
+
+Thank you very much for this, no more CPU problems for me too.
+
+Here's the step by step if you're not into computers.
+
+1/ Open the Task Manager (and let if open)
+2/ Go in C:\Windows\System32 and delete "igfxupdate.exe"
+3/ Go in C:\Windows\SysWOW64 and check if "igfxupdate.exe" is also here, if yes delete it
+4/ Open the windows services management console 
+Start > Execute > services.msc or Start > type "services.msc" in the search bar (Windows 7)
+5/ Look for "Search Indexer" -> Right click -> Properties and change the "Automatic" into "Disabled"
+6/ Reboot 
+7/ Open the Windows CMD as an Administrator
+Start > type "cmd" in the search bar (Windows 7) -> Right click -> Run as an Administrator
+8-> Type "sc delete SearchIndexer" then hit Enter
+
+And you're done !
+
+
+
+
+ Hi, after several hours of attemps I think I finally found the offender:
+much probably a Trojan Generic KDV 792778, it pretends to be the windows service "Search Indexer" and it creates the fake executable: "igfxupdate.exe" which tries to connect in internet and rises the cpu load all the time till you open the task manager to hide itself..
+So I solved the problem like this:
+in the windows services management console I disabled the above fake windows service (it was in automatic start mode) and after I deleted the igfxupdate.exe file that was in the windows system32 folder..
+I rebooted the pc and I deleted the same service with the command: "sc delete SearchIndexer"..
+problem solved! cpu back to normal level, not more unwanted connections and not more igfxupdate files around ..
+anyway for more safety it's better to do also a complete scan with a good antivirus/malware software
+
+
+
+
